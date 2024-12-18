@@ -49,3 +49,4 @@ namespace Geometrie.DAL
         #endregion
     }
 }
+public DbSet<Cercle_DAL> Cercles { get; set; }

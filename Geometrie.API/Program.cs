@@ -17,6 +17,10 @@ builder.Services.AddSingleton<IPoint_Service>(new Point_Service(new GeometrieCon
 
 builder.Services.AddSingleton<List<Cercle>>();
 
+builder.Services.AddScoped<CercleRepository>();
+builder.Services.AddScoped<ICercleService, CercleService>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
